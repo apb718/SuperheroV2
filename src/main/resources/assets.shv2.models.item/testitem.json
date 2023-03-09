@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+      "layer0": "shv2:item/testitem"
+  }
+}
