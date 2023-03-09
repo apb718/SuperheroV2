@@ -1,3 +1,15 @@
+https://www.mcjty.eu/docs/1.12/mod
+github.com/apb718/Superhero_Mod/
+IntelliJ IDEA - 4 Extensions:
+    Lookup "Minecraft" under plugins
+    Minecraft Development
+    Minecraft NBT Support
+    Architectury
+    optional: tabnine
+
+To run, click Gradle on the right, then SuperheroV2>Tasks>fg_runs>runClient
+If there is more info you need just text me or anything else
+
 -------------------------------------------
 Source installation information for modders
 -------------------------------------------
