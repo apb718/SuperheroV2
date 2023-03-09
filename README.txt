@@ -1,5 +1,5 @@
 https://www.mcjty.eu/docs/1.12/mod
-github.com/apb718/Superhero_Mod/
+github.com/apb718/SuperheroV2/
 IntelliJ IDEA - 4 Extensions:
     Lookup "Minecraft" under plugins
     Minecraft Development
@@ -9,6 +9,8 @@ IntelliJ IDEA - 4 Extensions:
 
 To run, click Gradle on the right, then SuperheroV2>Tasks>fg_runs>runClient
 If there is more info you need just text me or anything else
+
+I also have a repo at github.com/apb718/Superhero_Mod  with my other attempt. May be worth looking at
 
 -------------------------------------------
 Source installation information for modders
