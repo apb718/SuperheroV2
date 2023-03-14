@@ -6,4 +6,5 @@ public class ModBlocks {
 
     @GameRegistry.ObjectHolder("shv2:testblock")
     public static TestBlock testBlock;
+    // What is god?
 }
