@@ -9,6 +9,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mucrafters.superhero.item.ModItems;
+import net.mucrafters.superhero.block.ModBlocks;
+import net.mucrafters.superhero.world.feature.ModConfiguredFeatures;
+import net.mucrafters.superhero.world.feature.ModPlacedFeatures;
 import net.mucrafters.superhero.world.entity.ModEntities;
 import org.slf4j.Logger;
 
@@ -19,12 +22,17 @@ public class SuperheroMod {
     public static final String MOD_ID = "superheromod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
+
     public SuperheroMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModEntities.ENTITY_TYPES.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

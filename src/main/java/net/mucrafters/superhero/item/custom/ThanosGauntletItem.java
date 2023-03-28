@@ -32,7 +32,7 @@ public class ThanosGauntletItem extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
+        if(!level.isClientSide() && hand == InteractionHand.OFF_HAND) {
             //BlockPos blockPos = player.getOnPos();
             // Harm the player based on a "coin flip" chance
             harmPlayerSnap(player, isPlayerHarmed());

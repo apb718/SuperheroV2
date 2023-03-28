@@ -1,6 +1,11 @@
 {
-  "item.superheromod.platinum": "Platinum",
   "itemGroup.superherotab": "Superhero Items",
+  
+  "item.superheromod.platinum": "Platinum",
+  "item.superheromod.thanos_gauntlet": "Thanos Gauntlet",
   "item.superheromod.thanos_gauntlet": "Thanos Gauntlet",
   "item.superheromod.arrow_that_could": "Arrow that Could"
+
+  "block.superheromod.unfoundium_ore": "Unfoundium Ore"
+  
 }
