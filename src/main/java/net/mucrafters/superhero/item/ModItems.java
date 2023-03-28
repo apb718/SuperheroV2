@@ -14,7 +14,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SuperheroMod.MOD_ID);
 
     public static final RegistryObject<Item> PLATINUM = ITEMS.register("platinum",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB))) ;
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB)));
 
 
     // Adds the thanos gauntlet to the game
