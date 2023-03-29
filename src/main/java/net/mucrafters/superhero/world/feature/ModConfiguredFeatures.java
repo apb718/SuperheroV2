@@ -21,7 +21,8 @@ public class ModConfiguredFeatures {
             DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, SuperheroMod.MOD_ID);
 
     public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_UNFOUNDIUM_ORES = Suppliers.memoize(() -> List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.UNFOUNDIUM_ORE.get().defaultBlockState())));
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.UNFOUNDIUM_ORE.get().defaultBlockState()),
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_UNFOUNDIUM_ORE.get().defaultBlockState())));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> UNFOUNDIUM_ORE = CONFIGURED_FEATURES.register("unfoundium_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_UNFOUNDIUM_ORES.get(),25)));
