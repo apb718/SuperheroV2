@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "superheromod:block/deepslate_unfoundium_ore"
+  }
+}

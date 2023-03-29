@@ -1,14 +1,11 @@
 package net.mucrafters.superhero.block;
 
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,8 +21,13 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, SuperheroMod.MOD_ID);
 
     public static final RegistryObject<Block> UNFOUNDIUM_ORE = registerBlock("unfoundium_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.AMETHYST)
-                    .strength(6f).requiresCorrectToolForDrops().color(MaterialColor.METAL), UniformInt.of(3,12)), ModCreativeModeTab.SUPERHERO_TAB);
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.SUPERHERO_TAB);
+    public static final RegistryObject<Block> DEEPSLATE_UNFOUNDIUM_ORE = registerBlock("deepslate_unfoundium_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4.5f).requiresCorrectToolForDrops())
+                    , ModCreativeModeTab.SUPERHERO_TAB);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
