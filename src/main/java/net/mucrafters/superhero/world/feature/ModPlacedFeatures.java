@@ -18,8 +18,8 @@ public class ModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> UNFOUNDIUM_ORE_PLACED = PLACED_FEATURES.register("unfoundium_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.UNFOUNDIUM_ORE.getHolder().get(),
-                    rareOrePlacement(9, // VeinsPerChunk
-                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
+                    commonOrePlacement(9, // VeinsPerChunk
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-50), VerticalAnchor.aboveBottom(100)))));
       public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
         return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());
     }
