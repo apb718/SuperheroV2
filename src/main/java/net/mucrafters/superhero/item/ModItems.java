@@ -15,8 +15,6 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SuperheroMod.MOD_ID);
 
 
-
-
     // Adds the thanos gauntlet to the game
     // Added by Michael
     public static final RegistryObject<Item> THANOS_GAUNTLET = ITEMS.register("thanos_gauntlet",

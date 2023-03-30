@@ -8,7 +8,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab SUPERHERO_TAB = new CreativeModeTab("superherotab") {
         @Override
         public @NotNull ItemStack makeIcon() {
-            return new ItemStack(ModItems.PLATINUM.get() );
+            return new ItemStack(ModItems.THANOS_GAUNTLET.get() );
         }
     };
 }
