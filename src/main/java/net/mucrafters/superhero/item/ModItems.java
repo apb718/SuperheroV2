@@ -1,7 +1,6 @@
 package net.mucrafters.superhero.item;
 
 
-import net.minecraft.world.item.ArrowItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,8 +14,7 @@ public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SuperheroMod.MOD_ID);
 
-    public static final RegistryObject<Item> PLATINUM = ITEMS.register("platinum",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB)));
+
 
 
     // Adds the thanos gauntlet to the game
