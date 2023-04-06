@@ -5,5 +5,10 @@
   "item.superheromod.arrow_that_could": "Arrow that Could",
 
   "block.superheromod.deepslate_unfoundium_ore": "Deepslate Unfoundium Ore",
-  "block.superheromod.unfoundium_ore": "Unfoundium Ore"
+  "block.superheromod.unfoundium_ore": "Unfoundium Ore",
+
+  "item.superheromod.super_helmet": "Super Helmet",
+  "item.superheromod.super_chest": "Super Chest",
+  "item.superheromod.super_pants": "Super Pants",
+  "item.superheromod.super_boots": "Super Boots"
 }

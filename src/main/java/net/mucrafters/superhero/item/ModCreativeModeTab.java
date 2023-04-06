@@ -10,5 +10,6 @@ public class ModCreativeModeTab {
         public @NotNull ItemStack makeIcon() {
             return new ItemStack(ModItems.THANOS_GAUNTLET.get() );
         }
+
     };
 }
