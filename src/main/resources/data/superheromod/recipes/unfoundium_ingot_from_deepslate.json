@@ -1,0 +1,9 @@
+{
+  "type": "smelting",
+  "ingredient": {
+    "item": "superheromod:unfoundium_ore"
+  },
+  "result": "minecraft:diamond",
+  "experience": 1.5,
+  "cookingtime": 300
+}
