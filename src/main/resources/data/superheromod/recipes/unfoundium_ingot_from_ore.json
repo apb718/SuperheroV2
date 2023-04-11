@@ -1,0 +1,9 @@
+{
+  "type": "smelting",
+  "ingredient": {
+    "item": "superheromod:deepslate_unfoundium_ore"
+  },
+  "result": "minecraft:emerald",
+  "experience": 1.5,
+  "cookingtime": 300
+}
