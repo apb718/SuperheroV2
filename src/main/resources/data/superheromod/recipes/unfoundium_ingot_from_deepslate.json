@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "superheromod:unfoundium_ore"
   },
-  "result": "minecraft:diamond",
+  "result": "superheromod:unobtainium_ingot",
   "experience": 1.5,
   "cookingtime": 300
 }

@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "superheromod:deepslate_unfoundium_ore"
   },
-  "result": "minecraft:emerald",
+  "result": "superheromod:unobtainium_ingot",
   "experience": 1.5,
   "cookingtime": 300
 }

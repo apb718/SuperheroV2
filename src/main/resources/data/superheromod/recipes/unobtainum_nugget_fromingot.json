@@ -7,11 +7,12 @@
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "   ",
+    " # ",
+    "   "
   ],
   "result": {
+    "count": 9,
     "item": "superheromod:unobtainium_nugget"
   }
 }
