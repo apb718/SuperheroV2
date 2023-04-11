@@ -1,7 +1,6 @@
 package net.mucrafters.superhero.item;
 
 
-import net.minecraft.world.item.ArrowItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,6 +24,13 @@ public class ModItems {
     // Added by Michael
     public static final RegistryObject<Item> ARROW_THAT_COULD = ITEMS.register("arrow_that_could",
             () -> new ArrowThatCouldItem(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB)));
+
+    //
+    public static final RegistryObject<Item> UNOBTANIUM_INGOT = ITEMS.register("unobtainium_ingot",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB)));
+
+    public static final RegistryObject<Item> UNOBTANIUM_NUGGET = ITEMS.register("unobtainium_nugget",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
