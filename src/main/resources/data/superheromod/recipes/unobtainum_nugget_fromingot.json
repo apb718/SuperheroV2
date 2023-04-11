@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "unobtainium_nugget",
+  "key": {
+    "#": {
+      "item": "superheromod:unobtainium_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "superheromod:unobtainium_nugget"
+  }
+}
