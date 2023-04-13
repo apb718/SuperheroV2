@@ -14,10 +14,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mucrafters.superhero.SuperheroMod;
-//import net.mucrafters.superhero.base.ModArmorMat;
+
+import net.mucrafters.superhero.base.ModArmorMat;
 import net.mucrafters.superhero.item.custom.ArrowThatCouldItem;
 import net.mucrafters.superhero.item.custom.ThanosGauntletItem;
-//import net.mucrafters.superhero.item.custom.SuperArmor;
+import net.mucrafters.superhero.item.custom.SuperArmor;
+
 
 
 
@@ -52,14 +54,16 @@ public class ModItems {
         return new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB);
     }
     //All clothes registered
-//    public static final RegistryObject<ArmorItem> SUPER_HELMET = ITEMS.register("super_helmet",
-//            () -> new ArmorItem(SuperArmor.ArmorTiers.Shat,EquipmentSlot.HEAD, props()));
-//    public static final RegistryObject<ArmorItem> SUPER_CHEST = ITEMS.register("super_chest",
-//            () -> new ArmorItem(SuperArmor.ArmorTiers.Schest,EquipmentSlot.CHEST, props()));
-//    public static final RegistryObject<ArmorItem> SUPER_PANTS = ITEMS.register("super_pants",
-//            () -> new ArmorItem(SuperArmor.ArmorTiers.Spants,EquipmentSlot.LEGS, props()));
-//    public static final RegistryObject<ArmorItem> SUPER_BOOTS = ITEMS.register("super_boots",
-//            () -> new ArmorItem(SuperArmor.ArmorTiers.Sboots,EquipmentSlot.FEET, props()));
+
+    public static final RegistryObject<ArmorItem> SUPER_HELMET = ITEMS.register("super_helmet",
+            () -> new ArmorItem(SuperArmor.ArmorTiers.Shat,EquipmentSlot.HEAD, props()));
+    public static final RegistryObject<ArmorItem> SUPER_CHEST = ITEMS.register("super_chest",
+            () -> new ArmorItem(SuperArmor.ArmorTiers.Schest,EquipmentSlot.CHEST, props()));
+    public static final RegistryObject<ArmorItem> SUPER_PANTS = ITEMS.register("super_pants",
+            () -> new ArmorItem(SuperArmor.ArmorTiers.Spants,EquipmentSlot.LEGS, props()));
+    public static final RegistryObject<ArmorItem> SUPER_BOOTS = ITEMS.register("super_boots",
+            () -> new ArmorItem(SuperArmor.ArmorTiers.Sboots,EquipmentSlot.FEET, props()));
+
 
 //    //Creating materials and enchanments for armor
 //    public static class ArmorTiers {
