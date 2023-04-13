@@ -3,12 +3,15 @@
   
   "item.superheromod.thanos_gauntlet": "Thanos Gauntlet",
   "item.superheromod.arrow_that_could": "Arrow that Could",
-
-  "block.superheromod.deepslate_unfoundium_ore": "Deepslate Unfoundium Ore",
-  "block.superheromod.unfoundium_ore": "Unfoundium Ore",
+  "item.superheromod.unobtainium_ingot": "Unobtainium Ingot",
+  "item.superheromod.unobtainium_nugget": "Unobtainium Nugget",
 
   "item.superheromod.super_helmet": "Super Helmet",
   "item.superheromod.super_chest": "Super Chest",
   "item.superheromod.super_pants": "Super Pants",
   "item.superheromod.super_boots": "Super Boots"
+
+  "block.superheromod.deepslate_unobtainium_ore": "Deepslate Unobtainium Ore",
+  "block.superheromod.unobtainium_ore": "Unobtainium Ore"
+
 }

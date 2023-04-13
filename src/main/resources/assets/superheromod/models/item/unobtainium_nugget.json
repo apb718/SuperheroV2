@@ -1,7 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "superheromod:item/arrow_that_could"
+    "layer0": "superheromod:item/unobtainium_nugget"
   }
 }
-

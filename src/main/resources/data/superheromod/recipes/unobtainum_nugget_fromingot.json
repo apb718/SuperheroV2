@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "unobtainium_nugget",
+  "ingredients": [
+    {
+      "item": "superheromod:unobtainium_ingot"
+    }
+  ],
+
+  "result": {
+    "count": 9,
+    "item": "superheromod:unobtainium_nugget"
+  }
+}

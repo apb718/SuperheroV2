@@ -20,12 +20,12 @@ public class ModConfiguredFeatures {
     public static final DeferredRegister<ConfiguredFeature<?, ?>> CONFIGURED_FEATURES =
             DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, SuperheroMod.MOD_ID);
 
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_UNFOUNDIUM_ORES = Suppliers.memoize(() -> List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.UNFOUNDIUM_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_UNFOUNDIUM_ORE.get().defaultBlockState())));
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_UNOBTAINIUM_ORES = Suppliers.memoize(() -> List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.UNOBTAINIUM_ORE.get().defaultBlockState()),
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_UNOBTAINIUM_ORE.get().defaultBlockState())));
 
-    public static final RegistryObject<ConfiguredFeature<?, ?>> UNFOUNDIUM_ORE = CONFIGURED_FEATURES.register("unfoundium_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_UNFOUNDIUM_ORES.get(),25)));
+    public static final RegistryObject<ConfiguredFeature<?, ?>> UNOBTAINIUM_ORE = CONFIGURED_FEATURES.register("unobtainium_ore",
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_UNOBTAINIUM_ORES.get(),25)));
   public static void register(IEventBus eventBus){
         CONFIGURED_FEATURES.register(eventBus);
     }

@@ -20,10 +20,10 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, SuperheroMod.MOD_ID);
 
-    public static final RegistryObject<Block> UNFOUNDIUM_ORE = registerBlock("unfoundium_ore",
+    public static final RegistryObject<Block> UNOBTAINIUM_ORE = registerBlock("unobtainium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.SUPERHERO_TAB);
-    public static final RegistryObject<Block> DEEPSLATE_UNFOUNDIUM_ORE = registerBlock("deepslate_unfoundium_ore",
+    public static final RegistryObject<Block> DEEPSLATE_UNOBTAINIUM_ORE = registerBlock("deepslate_unobtainium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(4.5f).requiresCorrectToolForDrops())
                     , ModCreativeModeTab.SUPERHERO_TAB);
