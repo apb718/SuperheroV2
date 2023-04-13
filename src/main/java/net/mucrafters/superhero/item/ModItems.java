@@ -36,9 +36,9 @@ public class ModItems {
     public static final RegistryObject<Item> ARROW_THAT_COULD = ITEMS.register("arrow_that_could",
             () -> new ArrowThatCouldItem(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB)));
     static final RegistryObject<Item> UNOBTAINIUM_INGOT = ITEMS.register("unobtainium_ingot",
-            () -> new ArrowThatCouldItem(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB)));
     static final RegistryObject<Item> UNOBTAINIUM_NUGGET = ITEMS.register("unobtainium_nugget",
-            () -> new ArrowThatCouldItem(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
