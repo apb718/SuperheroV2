@@ -1,7 +1,7 @@
 {
   "type": "smelting",
   "ingredient": {
-    "item": "superheromod:unfoundium_ore"
+    "item": "superheromod:unobtainium_ore"
   },
   "result": "superheromod:unobtainium_ingot",
   "experience": 1.5,

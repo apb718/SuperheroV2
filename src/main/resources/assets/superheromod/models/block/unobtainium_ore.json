@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "superheromod:block/unfoundium_ore"
+    "all": "superheromod:block/unobtainium_ore"
   }
 }

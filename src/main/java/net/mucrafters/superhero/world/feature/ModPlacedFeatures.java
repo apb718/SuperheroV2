@@ -16,8 +16,8 @@ public class ModPlacedFeatures {
             DeferredRegister.create(Registry.PLACED_FEATURE_REGISTRY, SuperheroMod.MOD_ID);
 
 
-    public static final RegistryObject<PlacedFeature> UNFOUNDIUM_ORE_PLACED = PLACED_FEATURES.register("unfoundium_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.UNFOUNDIUM_ORE.getHolder().get(),
+    public static final RegistryObject<PlacedFeature> UNOBTAINIUM_ORE_PLACED = PLACED_FEATURES.register("unobtainium_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.UNOBTAINIUM_ORE.getHolder().get(),
                     commonOrePlacement(9, // VeinsPerChunk
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-50), VerticalAnchor.aboveBottom(100)))));
       public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
