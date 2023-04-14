@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "X": {
-      "item": "uperheromod:unobtainium_ingot"
+      "item": "superheromod:unobtainium_ingot"
     }
   },
   "pattern": [
@@ -11,6 +11,6 @@
     "XXX"
   ],
   "result": {
-    "item": "superheromod:super_chest"
+    "item": "superheromod:unobtainium_chest"
   }
 }

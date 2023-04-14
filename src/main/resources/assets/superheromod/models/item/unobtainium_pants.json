@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "superheromod:item/super_pants"
+    "layer0": "superheromod:item/unobtainium_pants"
   }
 }

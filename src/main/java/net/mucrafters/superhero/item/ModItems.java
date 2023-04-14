@@ -1,14 +1,10 @@
 package net.mucrafters.superhero.item;
 
 
-import com.sun.net.httpserver.Filter;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraftforge.common.crafting.VanillaIngredientSerializer;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -18,7 +14,7 @@ import net.mucrafters.superhero.SuperheroMod;
 import net.mucrafters.superhero.base.ModArmorMat;
 import net.mucrafters.superhero.item.custom.ArrowThatCouldItem;
 import net.mucrafters.superhero.item.custom.ThanosGauntletItem;
-import net.mucrafters.superhero.item.custom.SuperArmor;
+import net.mucrafters.superhero.item.custom.SuperArmorItem;
 
 
 
@@ -55,31 +51,22 @@ public class ModItems {
     }
     //All clothes registered
 
-    public static final RegistryObject<ArmorItem> SUPER_HELMET = ITEMS.register("super_helmet",
-            () -> new ArmorItem(SuperArmor.ArmorTiers.Shat,EquipmentSlot.HEAD, props()));
-    public static final RegistryObject<ArmorItem> SUPER_CHEST = ITEMS.register("super_chest",
-            () -> new ArmorItem(SuperArmor.ArmorTiers.Schest,EquipmentSlot.CHEST, props()));
-    public static final RegistryObject<ArmorItem> SUPER_PANTS = ITEMS.register("super_pants",
-            () -> new ArmorItem(SuperArmor.ArmorTiers.Spants,EquipmentSlot.LEGS, props()));
-    public static final RegistryObject<ArmorItem> SUPER_BOOTS = ITEMS.register("super_boots",
-            () -> new ArmorItem(SuperArmor.ArmorTiers.Sboots,EquipmentSlot.FEET, props()));
+    public static final RegistryObject<ArmorItem> UNOBTAINIUM_HELMET = ITEMS.register("unobtainium_helmet",
+            () -> new ArmorItem(ArmorTiers.UNOBTAINIUM,EquipmentSlot.HEAD, props()));
+    public static final RegistryObject<ArmorItem> UNOBTAINIUM_CHEST = ITEMS.register("unobtainium_chest",
+            () -> new ArmorItem(ArmorTiers.UNOBTAINIUM,EquipmentSlot.CHEST, props()));
+    public static final RegistryObject<ArmorItem> UNOBTAINIUM_PANTS = ITEMS.register("unobtainium_pants",
+            () -> new ArmorItem(ArmorTiers.UNOBTAINIUM,EquipmentSlot.LEGS, props()));
+    public static final RegistryObject<ArmorItem> UNOBTAINIUM_BOOTS = ITEMS.register("unobtainium_boots",
+            () -> new ArmorItem(ArmorTiers.UNOBTAINIUM,EquipmentSlot.FEET, props()));
 
 
-//    //Creating materials and enchanments for armor
-//    public static class ArmorTiers {
-//        public static final ArmorMaterial Shat = new ModArmorMat(
-//                "super", 500, new int[] {20, 20, 50, 10}, 300, SoundEvents.ARMOR_EQUIP_DIAMOND, 0.0f, 0.0f, () -> Ingredient.EMPTY
-//        );
-//        public static final ArmorMaterial Schest = new ModArmorMat(
-//                "super", 500, new int[] {20, 20, 50, 10}, 300, SoundEvents.ARMOR_EQUIP_DIAMOND, 0.0f, 0.0f, () -> Ingredient.EMPTY
-//        );
-//        public static final ArmorMaterial Spants = new ModArmorMat(
-//                "super", 500, new int[] {20, 20, 50, 10}, 300, SoundEvents.ARMOR_EQUIP_DIAMOND, 0.0f, 0.0f, () -> Ingredient.EMPTY
-//        );
-//        public static final ArmorMaterial Sboots = new ModArmorMat(
-//                "super", 500, new int[] {20, 20, 50, 10}, 300, SoundEvents.ARMOR_EQUIP_DIAMOND, 0.0f, 0.0f, () -> Ingredient.EMPTY
-//
-//        );
-//
-//    }
+
+    //Creating materials and enchantments for armor
+    public static class ArmorTiers {
+        public static final ArmorMaterial UNOBTAINIUM = new ModArmorMat(
+                "unobtainium", 500, new int[] {20, 20, 50, 10}, 300, SoundEvents.ARMOR_EQUIP_DIAMOND, 0.0f, 0.0f, () -> Ingredient.EMPTY
+        );
+    }
+
 }
