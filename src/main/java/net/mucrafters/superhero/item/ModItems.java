@@ -14,7 +14,6 @@ import net.mucrafters.superhero.SuperheroMod;
 import net.mucrafters.superhero.base.ModArmorMat;
 import net.mucrafters.superhero.item.custom.ArrowThatCouldItem;
 import net.mucrafters.superhero.item.custom.ThanosGauntletItem;
-import net.mucrafters.superhero.item.custom.SuperArmorItem;
 
 
 
@@ -37,9 +36,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB)));
     static final RegistryObject<Item> UNOBTAINIUM_NUGGET = ITEMS.register("unobtainium_nugget",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB)));
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
-    }
+
 
 
 
@@ -61,6 +58,9 @@ public class ModItems {
             () -> new ArmorItem(ArmorTiers.UNOBTAINIUM,EquipmentSlot.FEET, props()));
 
 
+    public static void register(IEventBus eventBus) {
+        ITEMS.register(eventBus);
+    }
 
     //Creating materials and enchantments for armor
     public static class ArmorTiers {
