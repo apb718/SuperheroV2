@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "tag": "superheromod:minecraft:string"
+    },
+    "#": {
+      "item": "superheromod:unobtainium_ingot"
+    }
+  },
+  "pattern": [
+    " #X",
+    "# X",
+    " #X"
+  ],
+  "result": {
+    "item": "superheromod:bow_that_could"
+  }
+}

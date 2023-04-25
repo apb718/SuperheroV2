@@ -10,6 +10,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mucrafters.superhero.item.ModItems;
 import net.mucrafters.superhero.block.ModBlocks;
+import net.mucrafters.superhero.util.ModItemProperties;
 import net.mucrafters.superhero.world.feature.ModConfiguredFeatures;
 import net.mucrafters.superhero.world.feature.ModPlacedFeatures;
 import net.mucrafters.superhero.world.entity.ModEntities;
@@ -35,6 +36,7 @@ public class SuperheroMod {
         ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::clientSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -45,6 +47,10 @@ public class SuperheroMod {
     private void commonSetup(final FMLCommonSetupEvent event)
     {
 
+    }
+
+    private void clientSetup(final FMLClientSetupEvent event) {
+        ModItemProperties.addCustomItemProperties();
     }
 
 

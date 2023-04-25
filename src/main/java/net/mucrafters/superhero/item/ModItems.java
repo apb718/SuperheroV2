@@ -37,7 +37,10 @@ public class ModItems {
     static final RegistryObject<Item> UNOBTAINIUM_NUGGET = ITEMS.register("unobtainium_nugget",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB)));
 
-
+    // Adds the bow that could to the game
+    // Added by Jackson
+    public static final RegistryObject<Item> BOW_THAT_COULD = ITEMS.register("bow_that_could",
+            () -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB).durability(500)));
 
 
     // creating armor
