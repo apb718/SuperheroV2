@@ -33,6 +33,6 @@ Click the clone button with the repo link in the URL box and it will clone the r
 ##### 3. Click Game Mode: {current mode} until it changes to creative.
 ##### 4. Click Create World
 ##### 5. If any warning come up press "Yes"
-##### 6. From here you can access the mod items by opening your inventory(e), then navigating to the 2nd page of tabs, click the superhero tab and you can access our mod items from here.
+##### 6. From here you can access the mod items by opening your inventory(press e), then navigating to the 2nd page of tabs through the arrow in the top right, thenclick the superhero tab and you can access our mod items from here.
 
 
