@@ -22,8 +22,9 @@ Click the clone button with the repo link in the URL box and it will clone the r
 ![Gradle Setup Icon](https://i.imgur.com/EqlNknV.png)
 
 ### 4. Gradle Cont.
-##### Hit the button on the far right of the screen that says [Gradle](https://i.imgur.com/EqlNknV.png). In this you will see a collapsable menu.  Hit the triangle to expand the sections as the image below shows
-![Gradle Tasks](https://i.imgur.com/OAQdVdR.png). Run the genIntelliJRuns task and wait for it to complete. After you are done, run the [runClient](https://i.imgur.com/82w941U.png) task by double clicking it. This will launch the game
+##### Hit the button on the far right of the screen that says [Gradle](https://i.imgur.com/EqlNknV.png). In this you will see a collapsable menu.  Hit the triangle to expand the sections as the image below shows. Run the genIntelliJRuns task and wait for it to complete. After you are done, run the runClient  task by double clicking it. This will launch the game
+![Gradle Tasks](https://i.imgur.com/OAQdVdR.png). 
+![runClient](https://i.imgur.com/82w941U.png)
 
 
 ### 5. Minecraft in Game
