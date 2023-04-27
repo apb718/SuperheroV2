@@ -13,12 +13,25 @@
 ##### Select the "Get from VCS Button). After paste the repository clone link in the URL box. If you see a button that says "Download GIT" click it as well.
 ![Version Control Button](https://i.imgur.com/i1GuCTu.png)
 
+![Version Control Clone Repo](https://i.imgur.com/xgxWnZY.png)
+Click the clone button with the repo link in the URL box and it will clone the repository.
 
 
+### 3. Allow Gradle Setup to occur. 
+##### In the bottom right corner of the screen there should be a loading bar saying "Background Tasks" or "Gradle build". You need to wait until this bar is complete to continue to the next step. This icon should look like this
+![Gradle Setup Icon](https://i.imgur.com/EqlNknV.png)
 
-### 3.
+### 4. Gradle Cont.
+##### Hit the button on the far right of the screen that says [Gradle](https://i.imgur.com/EqlNknV.png). In this you will see a collapsable menu.  Hit the triangle to expand the sections as the image below shows
+![Gradle Tasks](https://i.imgur.com/OAQdVdR.png). Run the genIntelliJRuns task and wait for it to complete. After you are done, run the [runClient](https://i.imgur.com/82w941U.png) task by double clicking it. This will launch the game
 
-### 4.
 
+### 5. Minecraft in Game
+##### 1. Click Singleplayer
+##### 2. Change the world name
+##### 3. Click Game Mode: {current mode} until it changes to creative.
+##### 4. Click Create World
+##### 5. If any warning come up press "Yes"
+##### 6. From here you can access the mod items by opening your inventory(e), then navigating to the 2nd page of tabs, click the superhero tab and you can access our mod items from here.
 
 
