@@ -40,7 +40,7 @@ public class ModItems {
 
 
 
-    // creating armor
+
 
     //method to just make it easier when calling properties
     private static Item.Properties props() {
@@ -48,6 +48,7 @@ public class ModItems {
     }
     //All clothes registered
 
+    //registering armor
     public static final RegistryObject<ArmorItem> UNOBTAINIUM_HELMET = ITEMS.register("unobtainium_helmet",
             () -> new ArmorItem(ArmorTiers.UNOBTAINIUM,EquipmentSlot.HEAD, props()));
     public static final RegistryObject<ArmorItem> UNOBTAINIUM_CHEST = ITEMS.register("unobtainium_chest",
@@ -58,6 +59,11 @@ public class ModItems {
             () -> new ArmorItem(ArmorTiers.UNOBTAINIUM,EquipmentSlot.FEET, props()));
 
 
+    public static final RegistryObject<BowItem> UNOBTAINIUM_BOWW = ITEMS.register("unobtainium_boww",
+            () -> new BowItem(props().durability(500)));
+
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
@@ -65,7 +71,7 @@ public class ModItems {
     //Creating materials and enchantments for armor
     public static class ArmorTiers {
         public static final ArmorMaterial UNOBTAINIUM = new ModArmorMat(
-                "unobtainium", 500, new int[] {20, 20, 50, 10}, 300, SoundEvents.ARMOR_EQUIP_DIAMOND, 0.0f, 0.0f, () -> Ingredient.EMPTY
+                "unobtainium", 100, new int[] {20, 20, 50, 10}, 300, SoundEvents.ARMOR_EQUIP_DIAMOND, 0.0f, 0.0f, () -> Ingredient.EMPTY
         );
     }
 

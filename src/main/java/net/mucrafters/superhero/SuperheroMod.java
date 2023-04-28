@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.mucrafters.superhero.event.ModItemProperties;
 import net.mucrafters.superhero.item.ModItems;
 import net.mucrafters.superhero.block.ModBlocks;
 import net.mucrafters.superhero.world.feature.ModConfiguredFeatures;
@@ -53,8 +54,8 @@ public class SuperheroMod {
     public static class ClientModEvents {
 
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-
+        public static void onClientSetup(final FMLClientSetupEvent event) {
+            ModItemProperties.addCustomProperties();
         }
     }
 
