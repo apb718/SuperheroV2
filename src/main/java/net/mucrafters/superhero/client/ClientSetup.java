@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.mucrafters.superhero.SuperheroMod;
 import net.mucrafters.superhero.client.renderer.entity.ArrowThatCouldRenderer;
+import net.mucrafters.superhero.util.ModItemProperties;
 import net.mucrafters.superhero.world.entity.ModEntities;
 import net.mucrafters.superhero.world.entity.customProjectiles.ArrowThatCould;
 

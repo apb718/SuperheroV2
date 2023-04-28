@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "X": {
-      "tag": "superheromod:minecraft:string"
+      "tag": "minecraft:string"
     },
     "#": {
       "item": "superheromod:unobtainium_ingot"
