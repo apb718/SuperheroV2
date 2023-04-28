@@ -62,8 +62,6 @@ public class ModItems {
             () -> new ArmorItem(ArmorTiers.UNOBTAINIUM,EquipmentSlot.FEET, props()));
 
 
-    public static final RegistryObject<BowItem> UNOBTAINIUM_BOWW = ITEMS.register("unobtainium_boww",
-            () -> new BowItem(props().durability(500)));
 
 
 

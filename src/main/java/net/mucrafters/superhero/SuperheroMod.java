@@ -3,12 +3,10 @@ package net.mucrafters.superhero;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.mucrafters.superhero.event.ModItemProperties;
 import net.mucrafters.superhero.item.ModItems;
 import net.mucrafters.superhero.block.ModBlocks;
 import net.mucrafters.superhero.util.ModItemProperties;
@@ -59,10 +57,6 @@ public class SuperheroMod {
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ClientModEvents {
 
-        @SubscribeEvent
-        public static void onClientSetup(final FMLClientSetupEvent event) {
-            ModItemProperties.addCustomProperties();
-        }
     }
 
 
