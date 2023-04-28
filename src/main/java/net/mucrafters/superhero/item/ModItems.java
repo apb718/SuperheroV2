@@ -13,6 +13,7 @@ import net.mucrafters.superhero.SuperheroMod;
 
 import net.mucrafters.superhero.base.ModArmorMat;
 import net.mucrafters.superhero.item.custom.ArrowThatCouldItem;
+import net.mucrafters.superhero.item.custom.BowThatCouldItem;
 import net.mucrafters.superhero.item.custom.ThanosGauntletItem;
 
 
@@ -39,9 +40,8 @@ public class ModItems {
 
     // Adds the bow that could to the game
     // Added by Jackson
-    public static final RegistryObject<Item> BOW_THAT_COULD = ITEMS.register("bow_that_could",
-            () -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB).durability(500)));
-
+    public static final RegistryObject<BowItem> UNOBTAINIUM_BOW = ITEMS.register("unobtainium_bow",
+            () -> new BowThatCouldItem(new Item.Properties().tab(ModCreativeModeTab.SUPERHERO_TAB).durability(500)));
 
 
 

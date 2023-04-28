@@ -1,6 +1,0 @@
-{
-    "parent": "superheromod:item/bow_that_could",
-    "textures": {
-        "layer0": "superheromod:item/bow_that_could_pulling_1"
-    }
-}

@@ -1,0 +1,6 @@
+{
+    "parent": "superheromod:item/unobtainium_bow",
+    "textures": {
+        "layer0": "superheromod:item/unobtainium_bow_pulling_0"
+    }
+}
