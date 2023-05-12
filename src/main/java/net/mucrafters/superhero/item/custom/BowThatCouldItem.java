@@ -7,6 +7,7 @@ import net.minecraft.stats.Stats;
 import
         net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MoverType;
@@ -41,7 +42,8 @@ public class BowThatCouldItem extends BowItem {
     public static final int DEFAULT_RANGE = Integer.MAX_VALUE;
 
     private static float bonusDamage = 2.0f;
-    private static float speed = 0.5f;
+    private static float speed = 1.0f;
+    private AbstractArrow firedArrow;
 
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, SuperheroMod.MOD_ID);
@@ -77,7 +79,8 @@ public class BowThatCouldItem extends BowItem {
                         ArrowItem arrowitem = (ArrowItem)(itemstack.getItem() instanceof ArrowItem ? itemstack.getItem() : Items.ARROW);
                         AbstractArrow abstractarrow = arrowitem.createArrow(p_40668_, itemstack, player);
                         abstractarrow = customArrow(abstractarrow);
-                        abstractarrow.setNoGravity(true);
+                        firedArrow = abstractarrow;
+                        //abstractarrow.setNoGravity(true);
                         //abstractarrow.setNoPhysics(true);
                         //abstractarrow.move
                         //abstractarrow.setDeltaMovement(100,0,0);
@@ -91,7 +94,6 @@ public class BowThatCouldItem extends BowItem {
 
                         //abstractarrow.lerpMotion(0.5,0,0); // Z == right
                         abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + (double)bonusDamage * 1.5D + 1.5D); // Sets increased damage, 2 ==
-
 
                         int k = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.PUNCH_ARROWS, p_40667_);
                         if (k > 0) {
@@ -141,17 +143,7 @@ public class BowThatCouldItem extends BowItem {
         return Integer.MAX_VALUE;
     }
 
-//    if(enchants.containsKey(TCombatEnchants.SNIPE.get())){
-//        double damage = abstractArrowEntity.getBaseDamage();
-//        Vector3d vector3d1 = shooter.getUpVector(1.0F);
-//        Quaternion quaternion = new Quaternion(new Vector3f(vector3d1), 0, true);
-//        Vector3d vector3d = shooter.getViewVector(1.0F);
-//        Vector3f vector3f = new Vector3f(vector3d);
-//        vector3f.transform(quaternion);
-//        Vector3d originalVector = abstractArrowEntity.getDeltaMovement();
-//        double length = originalVector.length() * 10;
-//        abstractArrowEntity.setDeltaMovement(vector3f.x()*length, vector3f.y()*length, vector3f.z()*length);
-//        abstractArrowEntity.hurtMarked = true;
-//        abstractArrowEntity.setBaseDamage(damage);
-//    }
+    public AbstractArrow getFiredArrow() {
+        return firedArrow;
+    }
 }

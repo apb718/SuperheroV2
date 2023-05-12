@@ -5,12 +5,15 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.BowItem;
+import net.minecraft.world.item.Item;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.common.Mod;
 import net.mucrafters.superhero.SuperheroMod;
 import net.mucrafters.superhero.item.ModItems;
+import net.mucrafters.superhero.item.custom.BowThatCouldItem;
 
 @Mod.EventBusSubscriber(modid = SuperheroMod.MOD_ID)
 public class ModEvents {
@@ -19,6 +22,7 @@ public class ModEvents {
     private static MobEffectInstance chestplateEffect = new MobEffectInstance(MobEffects.DAMAGE_BOOST, Integer.MAX_VALUE);
     private static MobEffectInstance leggingsEffect = new MobEffectInstance(MobEffects.JUMP, Integer.MAX_VALUE);
     private static MobEffectInstance bootsEffect = new MobEffectInstance(MobEffects.MOVEMENT_SPEED, Integer.MAX_VALUE);
+
 
     @SubscribeEvent
     public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
@@ -59,4 +63,5 @@ public class ModEvents {
             player.removeEffect(bootsEffect.getEffect());
         }
     }
+
 }
